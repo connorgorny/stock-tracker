@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const axios = require('axios');
 const path = require('path');
 require('dotenv').config();  // Load API keys from .env
@@ -6,6 +7,7 @@ require('dotenv').config();  // Load API keys from .env
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 // Serve static files from the 'frontend' directory
 app.use(express.static(path.join(__dirname, 'frontend')));
 
