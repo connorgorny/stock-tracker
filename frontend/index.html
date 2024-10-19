@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Real-time Stock Data</h1>
+    <input type="text" id="stockSymbol" placeholder="Enter Stock Ticker">
+    <button onclick="fetchStock()">Search</button>
+
+    <table id="trades-table">
+        <tr>
+            <th>Symbol</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Date</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
